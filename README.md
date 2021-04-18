@@ -4,7 +4,7 @@ Run this API with a local postgres db for data persistence. Then access from `ht
 ```
 docker-compose up
 ```
-Stop running containers and remove images to wipe the db (eg. before testing new API changes):
+Stop running containers and remove images to wipe the db before testing new API changes:
 ```
 docker-compose down --rmi all
 ```
