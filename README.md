@@ -1,5 +1,6 @@
-# Local development
+[Instructions to duplicate this repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository#mirroring-a-repository)
 
+# Local development
 Run this API with a local postgres db for data persistence. Then access from `http://localhost:8000` on a web browser. `docker-compose.yml` defines the local environment.
 ```
 docker-compose up
