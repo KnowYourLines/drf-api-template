@@ -3,7 +3,7 @@ setup:
     - plan: heroku-postgresql
       as: DATABASE
   config:
-    SECRET_KEY: !!f1r=78mf)an7i&t8yqy*#e%*wwcx59am^8(xor#11uh^98kt
+    SECRET_KEY: change-me-to-50-secret-characters
     DEBUG: True
 build:
   docker:
