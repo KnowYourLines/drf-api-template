@@ -2,4 +2,4 @@ Django<4
 djangorestframework<4
 psycopg2-binary>=2.8
 dj-database-url
-gunicorn
+django-heroku
