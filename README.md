@@ -1,7 +1,21 @@
 # Local development
 
-`docker-compose up` runs this api with a local postgres db for data persistence. Then access from `http://localhost:8000` on a web browser. `docker-compose.yml` defines the local environment.
-
+Run this API with a local postgres db for data persistence. Then access from `http://localhost:8000` on a web browser. `docker-compose.yml` defines the local environment.
+```
+docker-compose up
+```
+Stop running containers and remove images to wipe the db (eg. before testing new API changes):
+```
+docker-compose down --rmi all
+```
+To run functional tests:
+```
+docker exec -it drf-api-template_web_1 python manage.py test functional_tests
+```
+To run unit tests:
+```
+docker exec -it drf-api-template_web_1 python manage.py test api
+```
 # Deploying on Heroku
 You must have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) installed.
 
