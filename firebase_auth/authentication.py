@@ -34,7 +34,6 @@ class FirebaseAuthentication(authentication.BaseAuthentication):
         auth_header = request.META.get("HTTP_AUTHORIZATION")
         if not auth_header:
             raise NoAuthToken("No auth token provided")
-
         id_token = auth_header.split(" ").pop()
         try:
             decoded_token = auth.verify_id_token(id_token)
