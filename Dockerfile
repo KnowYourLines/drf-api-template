@@ -1,4 +1,4 @@
-FROM python:3.8.6
+FROM python:3.10.0
 ENV PYTHONUNBUFFERED=1
 WORKDIR /code
 COPY requirements.txt /code/
