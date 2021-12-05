@@ -6,7 +6,7 @@ setup:
     SECRET_KEY: change-me-to-50-secret-characters
     DEBUG: True
     LOCAL: False
-    ALLOWED_HOSTS: https://drf-api-template.herokuapp.com
+    ALLOWED_HOSTS: drf-api-template.herokuapp.com
 build:
   docker:
     web: Dockerfile
