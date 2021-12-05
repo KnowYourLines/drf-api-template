@@ -5,6 +5,7 @@ setup:
   config:
     SECRET_KEY: change-me-to-50-secret-characters
     DEBUG: True
+    LOCAL: False
 build:
   docker:
     web: Dockerfile
