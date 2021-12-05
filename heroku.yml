@@ -7,6 +7,12 @@ setup:
     DEBUG: True
     LOCAL: False
     ALLOWED_HOSTS: drf-api-template.herokuapp.com
+    FIREBASE_PROJECT_ID: don't
+    FIREBASE_PRIVATE_KEY_ID: commit
+    FIREBASE_PRIVATE_KEY: these
+    FIREBASE_CLIENT_EMAIL: to
+    FIREBASE_CLIENT_ID: version
+    FIREBASE_CLIENT_CERT_URL: control
 build:
   docker:
     web: Dockerfile

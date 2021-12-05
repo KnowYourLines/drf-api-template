@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "firebase_auth",
     "api.apps.ApiConfig",
 ]
 
@@ -115,6 +116,13 @@ USE_L10N = True
 USE_TZ = True
 
 AUTH_USER_MODEL = "api.User"
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework.authentication.SessionAuthentication",
+        "firebase_auth.authentication.FirebaseAuthentication",
+    ),
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
